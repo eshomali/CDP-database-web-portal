@@ -1,0 +1,78 @@
+<!DOCTYPE HTML> 
+<html lang="en-US">
+<head>
+    <title>Access</title>
+	<meta name="google-signin-client_id" content="1004703959379-uomkibb31dq755ri2feve9ptnqoamrb1.apps.googleusercontent.com">
+	<style>
+		body{
+			background-color:#f5f5DC;
+			border: 5px solid rgb(56, 115, 188);
+		}
+		h1{
+		  font-weight: bold;
+		  color: #FFA500;
+		  font-size: 50px;
+		  text-align: center;
+		}
+		li{
+		  font-size: 20px;
+		}
+		p{
+		  font-weight: bold;
+		  font-size: 25px;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id='index'>
+		<h1>CDP Access Portal</h1>
+		<ul>
+			<li><a href='admin.php'>Admin Page</a></li>
+			<li><a href='cu-page2.php'>CU Page</a></li>
+			<li><a href='add-cu-page.php'>Add new CU</a></li>
+			<li><a href='add-thermal-page.php'>Add new Thermal</a></li>
+			<li><a href='add-laser-page.php'>Add new Laser</a></li>
+		</ul>
+	</div>
+	<div id="g-signin2"></div>
+	<p id="p1" style="text-align:center;">Please sign in</p>
+	<div class="center-div"><div class="g-signin2" data-onsuccess="onSignIn"></div></div>
+
+<script>
+function onSignIn(){
+	document.getElementById("p1").innerHTML = "onSignIn has been executed."
+	window.location="search-page.php"
+}
+
+function signOut(){
+	var auth2 = gapi.auth2.getAuthInstance();
+	auth2.signOut().then(function () {
+	console.log('User signed out.');
+	});
+}
+
+function onSuccess(googleUser){
+  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+}
+function onFailure(error){
+  console.log(error);
+}
+function renderButton(){
+  gapi.signin2.render('g-signin2', {
+	'scope': 'profile email',
+	'width': 50,
+	'height': 50,
+	'longtitle': true,
+	'theme': 'dark',
+	'onsuccess': onSuccess,
+	'onfailure': onFailure
+  });
+}
+</script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+/*   ===Font===   */
+body {
+	font-family: "Lato", sans-serif;
+}
+
+/*   ===Main Form Layout===   */
+.main-layout {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 1fr 0.2fr 1fr;
+	grid-template-areas:
+		"a b b . e"
+		"c d d . f"
+		"g h . . ."
+		". . . . i";
+	grid-gap: 20px;
+	padding: 25px 35px;
+}
+
+.form-label {
+	font-size: 17px;
+}
+
+.form-input-box {
+	width: 100%;
+}
+/*=============================*/
+
+/*   Style of the button   */
+.confirm-button {
+	font-size: 22px;
+	padding: 10px 20px;
+	float: right;
+}

@@ -1,0 +1,280 @@
+/*   =====Font=====   */
+body{
+	font-family: "Lato", sans-serif;
+}
+
+/*   =====Main Layout for the Form=====   */
+.main-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+		"a b c"
+		"d e f"
+		"g g f";
+	grid-gap: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+		/*   DCN and iDS   */
+		.item3 {
+			grid-area: ccc;
+		}
+		/*   Contact Information   */
+		.item4 {
+			grid-area: eee;
+		}
+		/*   Location   */
+		.item5 {
+			grid-area: f;
+		}
+		
+
+.main-layout>div {
+	font-size: 22px;
+	padding: 8px;
+}
+
+.form-label {
+	font-size: 17px;
+}
+
+.form-checkbox-label {
+	font-size: 24px;
+}
+/*================================================================*/
+
+
+
+/*   ===Layout for the Additional Credit Union Information===   */
+.addl-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"S S S T T T"
+		"U U U V V V"
+		"A B C D E F"
+		"G H H I J J"
+		"K L M X X X"
+		"N O P X X X"
+		"Q Q Q Q R R";
+	grid-gap: 50px 20px;
+	padding: 10px 50px;
+	padding-bottom: 30px;
+}
+
+		/*   Layout for the Client Database Section   */
+		.db-layout {
+			display: grid;
+			grid-template-columns: 0.5fr 1fr;
+			grid-gap: 15px;
+			padding: 15px 15px;
+		}
+		/*   Layout for the DMS Login Section   */
+		.dms-layout {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 15px;
+			padding: 50px 40px;
+		}
+		/*   Layout for the Server Information Section   */
+		.server-layout {
+			display: grid;
+			grid-template-columns: 0.5fr 1fr;
+			grid-gap: 15px;
+			padding: 20px 0px;
+		}
+		/*   Layout for the SQL Section   */
+		.sql-layout {
+			display: grid;
+			grid-template-columns: 0.5fr 1fr;
+			grid-gap: 15px;
+			padding: 20px 0px;
+		}
+		/*   Layout for the eTeller Section   */
+		.eteller-layout {
+			display: grid;
+			grid-template-columns: 0.5fr 1fr;
+			grid-gap: 15px;
+		}
+		/*   Layout for the Other Section   */
+		.other-layout {
+			display: grid;
+			grid-template-columns: 0.5fr 1fr;
+			grid-gap: 15px;
+		}
+/*================================================================*/
+
+/*   =====Layout for the Collapsible Tabs=====   */
+.collapsible-layout {
+	display: grid;
+	grid-template-areas:
+		"d"
+		"g"
+		"h"
+		"i";
+	grid-gap: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+
+
+.collapsible {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 24px;
+}
+
+.active, .collapsible:hover {
+	background-color: #ccc;
+}
+
+/*   ----------Licenses----------   */
+.licenses {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	font-size: 16px;
+}
+
+.licenses-info {
+	display: grid;
+	grid-template-columns: 0.2fr 0.4fr 0.4fr;
+	padding: 20px 0px;
+	padding-right: 300px;
+	grid-gap: 15px 50px;
+}
+
+.licenses-info-label {
+	font-size: 16px;
+}
+
+.licenses-info-label-title {
+	font-size: 20px;
+}
+/*----------------------------------------*/
+
+/*   ----------Thermal Printers----------   */
+.thermal {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	font-size: 16px;
+}
+
+.thermal-info {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+		"aa bb cc dd"
+		"ee ee ee ee"
+		"ff ff ff ff"
+		"gg gg gg gg";
+	padding: 20px 0px;
+}
+
+.thermal-info-label {
+	font-size: 16px;
+}
+
+.thermal-printer-table {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+	padding: 25px 15px;
+}
+
+.thermal-notes-box {
+	width: 100%;
+	height: 150px;
+	box-sizing: border-box;
+	resize: none;
+}
+
+/*   Thermal Masking   */
+.tinfo1 {
+	grid-area: aa;
+}
+
+/*   Color   */
+.tinfo2 {
+	grid-area: bb;
+}
+
+/*   Font Size   */
+.tinfo3 {
+	grid-area: cc;
+}
+
+/*   Duplicate   */
+.tinfo4 {
+	grid-area: dd;
+}
+
+/*   Thermal Notes   */
+.tinfo5 {
+	grid-area: ee;
+	padding-top: 15px;
+	padding-bottom: 40px;
+}
+
+/*   Printer Information   */
+.tinfo6 {
+	grid-area: ff;
+}
+/*----------------------------------------*/
+
+/*   ----------Laser Printers----------   */
+.laser {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	font-size: 16px;
+}
+
+.laser-info {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px 35px;
+	padding: 20px 0px;
+	padding-right: 200px;
+}
+
+.laser-info-label {
+	font-size: 16px;
+}
+/*----------------------------------------*/
+
+/*   ----------Notes----------   */
+.notes {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	font-size: 16px;
+}
+
+.notes-table {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+	padding: 20px 0px;
+}
+
+.notes-box {
+	width: 100%;
+	height: 150px;
+	box-sizing: border-box;
+	resize: none;
+}
+/*----------------------------------------*/
+/*================================================================*/

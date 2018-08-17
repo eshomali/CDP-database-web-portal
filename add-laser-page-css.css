@@ -1,0 +1,120 @@
+body{
+	font-family: "Lato", sans-serif;
+	padding: 25px 15px;
+}
+
+/*   =====Main Layout for the Form=====   */
+.main-layout {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: 
+		"e  f  f  .  c  d "
+		"h  i  i  .  g  gg"
+		"p  q  r  s  g  gg"
+		"j  k  l  m  n  o "
+		"t  u  .  v  w  . "
+		".  .  .  .  .  . "
+		"x  x  x  x  x  x "
+		".  .  .  .  .  . "
+		"y  z  aa bb cc . "
+		".  .  .  .  .  . "
+		"dd dd dd ee ee ee"
+		"ff ff ff ff ff ff";
+	grid-gap: 15px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 15px;
+}
+
+.form-label {
+	font-size: 17px;
+}
+
+.form-table-header {
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.form-input-box {
+	width: 100%;
+}
+/*========================================*/
+
+/*   ===Forms Loaded Tables===   */
+.table-left {
+	padding-left: 10px;
+	padding-right: 15px;
+}
+
+.table-right {
+	padding-right: 10px;
+	padding-left: 15px;
+}
+
+.forms-loaded-layout {
+	display: grid;
+	grid-template-columns: 0.15fr 0.7fr 0.5fr 0.4fr 1fr;
+	grid-gap: 15px;
+}
+/*========================================*/
+
+/*   ===Interface Table===   */
+.interface-layout {
+	display: grid;
+	grid-template-columns: 0.6fr 1fr 0.35fr 0.35fr 1fr;
+	grid-gap: 15px;
+}
+/*========================================*/
+
+
+/*   ===Solution Type Box===   */
+.solution-type-box {
+	background-color: #EFD3D2;
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 0.1fr 1fr 0.1fr;
+	grid-template-areas:
+		". . ."
+		". center ."
+		". . .";
+}
+
+.solution-type-info {
+	grid-area: center;
+	text-align: center;
+}
+/*========================================*/
+
+/*   ===Support Type Box===   */
+.support-type-box {
+	background-color: #FF00FF;
+	width: 100%;
+	height: 100%;
+	border: 1px solid black;
+	display: grid;
+	grid-template-columns: 0.1fr 1fr 0.1fr;
+	grid-template-areas:
+		". . ."
+		". center2 ."
+		". . .";
+}
+
+.support-type-info {
+	grid-area: center2;
+	text-align: center;
+}
+/*========================================*/
+
+/*   ===Notes===   */
+.notes-box {
+	width: 100%;
+	height: 150px;
+	box-sizing: border-box;
+	resize: none;
+}
+/*========================================*/
+
+
